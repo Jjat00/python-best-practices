@@ -43,7 +43,7 @@ Una vez estemos dentro del entorno virtual notese que en la consola todo va esta
 Después de haber inicializado git y después de activar el entorno virtual es hora de empezar a escribir nuestro código, pero antes es necesario saber que debemos organizar cada script  de código en su respectivo directorio. Esto dependerá de la arquitectura de software que se vaya a implementar. 
 Aquí un ejemplo de estructura de directorios:
 
-![ejemplo estructura de código](images/estructura_codigo.JPG)
+![ejemplo estructura de código](images/estructura_codigo.jpg)
 
 En la anterior imagen se muestra un ejemplo de estructura de directorios y archivos, esto puede variar, sin embargo, los archivos que nunca deben faltar en nuestro proyecto son:
 
