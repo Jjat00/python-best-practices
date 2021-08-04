@@ -90,7 +90,7 @@ Entre las recomendaciones dadas, se resaltan las siguientes:
 * Constantes: CAPS_WITH_UNDERSCORES
 
 Aquí también es importante mencionar **El Zen de Python**, podemos vizualizarlo
-ejecutando la siguiente liena de código dentro de python:
+ejecutando la siguiente linea de código dentro de python:
 
 ```
 >>> import this
@@ -128,16 +128,8 @@ Para hacer un código reutilizable o modular es siempre recomendable que hagamos
 de la programación orientada a objetos, de esta manera nuestro código tiene algunas ventajas
 como: reutilización, modularidad, polimorfismo, encapsulación de datos y herencia.
 
-## 6. Crear un repositorio con templeates de código
 
-De mano con la anterior recomendación, tener un repositorio en el cual guardemos
-códigos de nuestros antiguos proyectos (obviamente usando POO y modulares) es de vital 
-importancia para acelerar el desarrollo de aplicaciones que sean similares a las 
-aplicaciones ya hechas. Entre más enriquecido esté nuestro repositorio de templates
-más rápido ejecutaremos futuros proyectos. Solamente es copiar y pegar, y una que otra
-modificación. 
-
-## 7. Otras recomendaciones
+## 6. Otras recomendaciones
 
 En el código:
 
@@ -154,12 +146,9 @@ income = (gross_wages
           - ira_deduction)
 ``` 
 
-Para importar librerias, hacerlo en el siguiente orden: primero las librerias que son parte
-de python (os, json, ++), después siguen las librerias de terceros (cve, numpy, ++), por
-último las librerias personales.
+Para importar librerias, hacerlo en el siguiente orden: primero las librerias que son parte de python (os, json, ++), después siguen las librerias de terceros (cve, numpy, ++), por último las librerias personales.
 
-Otra recomendación es importar justamente los métodos necesarios y no todo el paquete completo,
-ejemplo:
+Otra recomendación es importar justamente los métodos necesarios y no todo el paquete completo, ejemplo:
 
 **forma correcta**
 
@@ -182,7 +171,15 @@ import sys, os
 
 **Usar métodod mágicos**
 
-## 8. Extenciones en Visual Studio Code
+**Crear un repositorio con templates de código**
+
+De mano con la anterior recomendación, tener un repositorio en el cual guardemos
+códigos de nuestros antiguos proyectos (obviamente usando POO y modulares) es de vital 
+importancia para acelerar el desarrollo de aplicaciones que sean similares a las 
+aplicaciones ya hechas. Entre más enriquecido esté nuestro repositorio de templates
+más rápido ejecutaremos futuros proyectos. Solamente es copiar y pegar, y una que otra
+modificación. 
+
 
 
 ## More information about this
