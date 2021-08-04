@@ -1,4 +1,4 @@
-# Python Best Practices
+# Buenas Prácticas de Programación en Python
 
 En este repositorio se dan algunos consejos sobre cómo crear código 
 en python correctamente, o al menos es un buen punto de inicio.
@@ -6,31 +6,27 @@ en python correctamente, o al menos es un buen punto de inicio.
 
 ## 1. Crear un repositorio
 
-El primer paso que debemos realizar antes de crear nuestro primer archivo es inicializar unrepositorio git. Crear un repositorio para el código e implementar un control de versiones
-ayuda al trabajo en grupo y a la reutilización de código para proyectos futuros y optimizar
-tiempos de desarrollo. 
+El primer paso que debemos realizar antes de crear nuestro primer archivo es inicializar unrepositorio git. Crear un repositorio para el código e implementar un control de versiones ayuda al trabajo en equipo y a la reutilización de código para optimizar tiempo de desarrollo. 
 
 **Para inicializar un repositorio:**
-    
+
 ```
 git init
 ```
 
-## 2. Crear un enterno virtual
+## 2. Crear un entorno virtual
 
-Como segundo paso, lo ideal es que para cada proyecto, aplicación o paquete se desea construir
-se necesario crear un entorno virtual, esto para poder manajar todas las dependecias 
-de librerias que tendra el proyecto o código.
+Como segundo paso, lo ideal es que para cada proyecto, aplicación o paquete que se desee construir es necesario crear un entorno virtual, esto para poder manajar todas las dependencias de librerías que tendrá el proyecto o código.
 
 **Pasos para crear un entorno virtual en python**
 
-Ir a al directorio path del proyecto y ejecutar:
+Ir a al directorio root del proyecto y ejecutar:
 
 ```
 python -m venv venv
 ```
 
-con el anterior comando se creará un nuevo directorio llamado venv, el nombre venv puede ser el reemplazado por el que usted decida, pero es recomendable llamar al entorno virtual como 'venv'
+con el anterior comando se creará un nuevo directorio llamado venv, el nombre venv puede ser el reemplazado por el que usted decida, pero es recomendable llamar al entorno virtual como 'venv'.
 
 **Activar entorno virtual**
 
@@ -40,75 +36,61 @@ En windows
 .\venv\Scripts\activate.bat
 ```
 
-Una vez estemos dentro del entorno virtual notese que en la consola todo va estar precedido 
-despues de (venv)
+Una vez estemos dentro del entorno virtual notese que en la consola todo va estar precedido de (venv)
 
-## 3. Tener una estructura de directorios para el códifo
+## 3. Tener una estructura de directorios para el código
 
-Después de haber inicializado git y después de activar el entorno virtual es hora de empezar
-a escribir nuestro código, pero antes es necesario saber que debemos organizar cada script 
-de código en su respectivo directorio. Esto dependerá de la arquitectura de software que se
-deseemos implementar. 
+Después de haber inicializado git y después de activar el entorno virtual es hora de empezar a escribir nuestro código, pero antes es necesario saber que debemos organizar cada script  de código en su respectivo directorio. Esto dependerá de la arquitectura de software que se vaya a implementar. 
 Aquí un ejemplo de estructura de directorios:
 
-<img src="resources\estructura_codigo.JPG" width="250"></img>
+![ejemplo estructura de código](images/estructura_codigo.JPG)
 
-En la anterior imagen se muestra un ejemplo de estructura de directorios y archivos, esto puede
-variar, sin embargo los archivos que nunca deben faltar en nuestro proyecto son:
+En la anterior imagen se muestra un ejemplo de estructura de directorios y archivos, esto puede variar, sin embargo, los archivos que nunca deben faltar en nuestro proyecto son:
 
 * .gitignore
 
-    En este archivo pondremos los nombres de los archivos o directorios que no queremos que 
-    sean agregados a nuestro repositorio en github.
-    Por ejemplo el directorio venv nunca deberá ser incluido en el repositorio, para ello es
-    generado el archivo llamado **requirements.txt** que será detallado más adelante.
+    En este archivo pondremos los nombres de los archivos o directorios que no queremos que sean agregados a nuestro repositorio en github. Por ejemplo, el directorio venv nunca deberá ser incluido en el repositorio, para ello es generado el archivo llamado **requirements.txt** que será detallado más adelante.
 
-    Algunos ejemplos de archivos típicos que deben estar en .gitignore son: venv, __pycache__, private keys
+    Algunos ejemplos de archivos típicos que deben estar en .gitignore son: venv, __pycache__, private keys, etc.
 
 * LICENSE.md
 
-    En este archivo debemos especificar el tipo de lincencia que queremos para nuestro paquete o aplicación. Algunas opciones son: GNU AGPLv3, GNU GPLv3, Mozilla Public License 2.0
-    GNU LGPLv3, Apache License 2.0, MIT License, The Unlicense.
+    En este archivo debemos especificar el tipo de lincencia que queremos para nuestro paquete o aplicación. Algunas opciones son: GNU AGPLv3, GNU GPLv3, Mozilla Public License 2.0 GNU LGPLv3, Apache License 2.0, MIT License, The Unlicense.
 
-    La licencia más usada en github es la MIT license
+    La licencia más usada en github es la MIT license.
 
 * README.md
 
-    Este archuivi siempre debe estar en cualquier proyecto que desarrollemos y aquí debe ir 
-    una descripción general de nuestro proyecto, podemos usar markdown o html para crear
-    este archivo. Aquí debe la información necesaria que necesita otro desarrollador para
-    que pueda usar nuestro paquete o aplicación.
+    Este archivo siempre debe estar en cualquier proyecto que desarrollemos y aquí debe ir una descripción general de nuestro proyecto y la información necesaria que necesita otro desarrollador para que pueda usar nuestro paquete o aplicación. Ppodemos usar markdown o html para crear este archivo.
 
 * requirements.txt
 
     Este archivo es muy importante para permitir pasar código de un desarrollador a otro.
-    Aquí irán todas las dependecias que nuestro proyecto nececita para poder ser ejecutado
-    en otro computador.
+    Aquí irán todas las dependecias que nuestro proyecto nececita para poder ser ejecutado en otro ordenador.
     Este archivo se puede generar automaticamente por medio de la siguiente linea de comando:
 
     ```
     pip freeze > requirements.txt
     ```
 
-    para ejecutar la anterior linea de comando asegurese de que tiene el entorno virtual
-    activado.
+    para ejecutar la anterior linea de comando asegurese de tener el entorno virtual activado.
 
 ## 4. Acoger las recomendaciones de estilo dadas por el PEP8
 
-el [PEP8](https://www.python.org/dev/peps/pep-0008/) contiene algunas grandes recomendaciones dadas por la comunidad. Esto para que el código de los desarrolladores de Python se vea 
-y se sienta igual.
+el [PEP8](https://www.python.org/dev/peps/pep-0008/) contiene algunas grandes recomendaciones dadas por la comunidad. Esto para que el código de los desarrolladores de Python se vea y se sienta igual.
 
 Entre las recomendaciones dadas, se resaltan las siguientes:
 
-* Utilice convenciones de nomenclatura adecuadas para variables, funciones, métodos y más.
+**Utilice convenciones de nomenclatura adecuadas para variables, funciones, métodos y más.**
+
 * Variables, funciones, métodos, paquetes, módulos: this_is_a_variable
 * Clases y excepciones: CapWords
 * Métodos protegidos y funciones internas: _single_leading_underscore
 * Métodos privados: __double_leading_underscore
 * Constantes: CAPS_WITH_UNDERSCORES
 
-Aquí también es importante mencionar el denominado **El Zen de Python**, podemos vizualizarlo
-ejecutando la siguiente liena de código en el IDLE
+Aquí también es importante mencionar **El Zen de Python**, podemos vizualizarlo
+ejecutando la siguiente liena de código dentro de python:
 
 ```
 >>> import this
@@ -199,6 +181,10 @@ import sys, os
 **Sphinx** es una herramienta para crear fácilmente documentación inteligente y hermosa
 
 **Usar métodod mágicos**
+
+## 8. Extenciones en Visual Studio Code
+
+
 ## More information about this
 
 
